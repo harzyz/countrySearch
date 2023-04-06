@@ -18,7 +18,7 @@ console.log(currentCounres, "currentCounres");
 
 const displayScreen = async (val) => {
   let countries = await val;
-  let output = '<h2 class="container">Countries</h2>';
+  let output = '';
 
   countries.forEach(function (country) {
     output += `

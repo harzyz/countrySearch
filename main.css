@@ -4,6 +4,9 @@ body{
 .container{
     text-align: center;
 }
+#searchWrapper{
+    border-bottom: 100px;
+}
 #searchBar {
     width: 80%;
     height: 32px;
@@ -12,13 +15,18 @@ body{
     padding: 5px 10px;
     font-size: 12px;
 }
-.wrapper{
+#output{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* .wrapper{
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
     vertical-align: top;
     width: 24%;
-}
+} */
 img {
     object-fit: contain;
     
@@ -83,10 +91,13 @@ input:checked + .slider:before {
     display: inline-block;
 }
 @media screen and (max-width:700px) {
-    .wrapper{
+    /* .wrapper{
         margin-top: 100px;
         display: inline;
-        width: 80%;
         text-align: center;
+    } */
+    #output{
+        flex-direction: column;
+        align-items: center;
     }
 }
