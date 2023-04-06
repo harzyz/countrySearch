@@ -84,6 +84,7 @@ input:checked + .slider:before {
 }
 @media screen and (max-width:700px) {
     .wrapper{
+        margin-top: 100px;
         display: inline;
         width: 80%;
         text-align: center;
