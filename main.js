@@ -7,7 +7,7 @@ let currentCounres;
 var latest;
 
 let fetchCouries = async function () {
-  let res = await fetch("https://restcountries.com/v3.1/all?fields=name,flags");
+  let res = await fetch("https://restcountries.com/v3.1/all?fields=name,capital,flags");
   let data = await res.json();
   localStorage.setItem("countries", JSON.stringify(data));
   return data;
@@ -23,8 +23,8 @@ const displayScreen = async (val) => {
   countries.forEach(function (country) {
     output += `
     <div class="wrapper">
-        <p>Official Name: ${country.name.official}</p>
         <p>Common Name: ${country.name.common}</p>
+        <p>Capital: ${country.capital}</p>
         <img src='${country.flags.png}'>
     </div>`;
   });
