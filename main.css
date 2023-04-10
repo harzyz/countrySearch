@@ -22,6 +22,18 @@ body{
     gap: 10px;
     grid-template-columns: repeat(5, 1fr);
 }
+img {
+    width: 50%;
+    height: 80px;
+    
+}
+@media screen and (max-width:700px) {
+    #output{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
 /* .wrapper{
     display: inline-block;
     margin-right: 10px;
@@ -29,12 +41,6 @@ body{
     vertical-align: top;
     width: 24%;
 } */
-img {
-    /* object-fit: contain; */
-    width: 50%;
-    height: 80px;
-    
-}
     /* 
 .switch {
     position: relative;
@@ -95,9 +101,3 @@ input:checked + .slider:before {
 .darkMode {
     display: inline-block;
 } */
-@media screen and (max-width:700px) {
-    #output{
-        display: block;
-        align-items: center;
-    }
-}
