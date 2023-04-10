@@ -51,17 +51,17 @@ searchBar.addEventListener("keyup", (e) => {
   displayScreen(filteredCountry);
 });
 
-let boobs = false;
-const nasty = document.getElementById("darkMode");
-nasty.addEventListener("click", darkMode);
-function darkMode() {
-  boobs = !boobs;
-  bra = document.body;
-  if (boobs === true) {
-    bra.style.backgroundColor = "black";
-    bra.style.color = "white";
-  } else {
-    bra.style.backgroundColor = "white";
-    bra.style.color = "black";
-  }
-}
+// let boobs = false;
+// const nasty = document.getElementById("darkMode");
+// nasty.addEventListener("click", darkMode);
+// function darkMode() {
+//   boobs = !boobs;
+//   bra = document.body;
+//   if (boobs === true) {
+//     bra.style.backgroundColor = "black";
+//     bra.style.color = "white";
+//   } else {
+//     bra.style.backgroundColor = "white";
+//     bra.style.color = "black";
+//   }
+// }
