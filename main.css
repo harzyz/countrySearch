@@ -1,6 +1,6 @@
 body{
     font-family: 'Alkatra', cursive;
-    background-color: black;
+    background-color: rgb(217, 199, 198);
     color: white;
 }
 .container{
@@ -30,11 +30,12 @@ body{
     width: 24%;
 } */
 img {
-    object-fit: contain;
+    /* object-fit: contain; */
     width: 50%;
     height: 80px;
     
 }
+    /* 
 .switch {
     position: relative;
     display: inline-block;
@@ -93,15 +94,10 @@ input:checked + .slider:before {
 }
 .darkMode {
     display: inline-block;
-}
+} */
 @media screen and (max-width:700px) {
-    /* .wrapper{
-        margin-top: 100px;
-        display: inline;
-        text-align: center;
-    } */
     #output{
-        flex-direction: column;
+        display: block;
         align-items: center;
     }
 }
